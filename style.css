@@ -215,11 +215,12 @@ nav ul li a:hover,
 .fa-bootstrap {
   color: #7952b3;
 }
+
 .fa-js-square {
   color: #f7df1e;
   background-color: #000;
   border-radius: 4px;
-  padding: 2px;
+  padding: 1px;
 }
 .fa-react {
   color: #61dbfb;
