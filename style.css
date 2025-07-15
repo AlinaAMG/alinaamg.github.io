@@ -306,6 +306,14 @@ nav ul li a:hover,
   margin:0 1rem;
 }
 
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.7rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 #projects {
   color: #333;
 }
@@ -398,11 +406,30 @@ nav ul li a:hover,
   transition: all 0.3s ease-in-out;
  
 }
+.fa-github{
+  margin-bottom:2rem;
+}
 .fa-github:hover {
   color: #5fa8f2;
   border:2px solid #1572b6;
   transform: scale(1.05);
 }
+.fa-code,
+.fa-tools,
+.fa-user,
+.fa-envelope,
+.fa-code,
+.fa-tools{
+  color:#fff;
+  font-size:16px;
+}
+.fa-code:hover,
+.fa-tools:hover,
+.fa-user:hover,
+.fa-envelope:hover{
+  text-decoration: underline;
+}
+
 
 
 /* Container */
