@@ -7,9 +7,13 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family:'Open Sans', sans-serif;
-   overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  
    color:#444;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -34,8 +38,8 @@ body {
 .header ul {
   list-style: none;
   display: flex;
-
   align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 .header ul li a {
@@ -51,8 +55,7 @@ nav ul li a:hover,
 
 .hero-section {
   position:relative;
-
-  background-image: url('https://images.unsplash.com/photo-1581276879432-15e50529f34b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+ background-image: url('https://images.unsplash.com/photo-1581276879432-15e50529f34b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -97,15 +100,18 @@ nav ul li a:hover,
 .hero-links a i {
   color: #fff;
   margin: 10px;
-  font-size:20px;
+  font-size:24px;
   padding:5px;
   border:2px solid #fff;
   border-radius:50%;
-  cursor: pointer;
+  cursor:pointer;
+ transition:all 0.3s ease-in-out;
+
 }
 .hero-links a i:hover {
   color: #1572b6;
-  border:2px solid #1572b6;
+  border:3px solid #1572b6;
+  transform: scale(1.05);
 }
 
 .container-body {
@@ -271,7 +277,7 @@ nav ul li a:hover,
 
 #about,
 #projects {
-  padding: 30px;
+  margin-left:20px;
 
 }
 .download-btn{
@@ -291,19 +297,16 @@ nav ul li a:hover,
 #about h2,
 #projects h2 {
   text-align: center;
- 
   font-size: 2rem;
   color: #444;
-  margin-bottom: 2rem;
+  margin: 2rem 1rem;
 }
 #about p {
   line-height: 1.6;
+  margin:0 1rem;
 }
 
 #projects {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
   color: #333;
 }
 
@@ -392,10 +395,13 @@ nav ul li a:hover,
   padding:5px;
   border:2px solid rgb(34, 154, 253);
   border-radius:50%;
+  transition: all 0.3s ease-in-out;
  
 }
 .fa-github:hover {
   color: #5fa8f2;
+  border:2px solid #1572b6;
+  transform: scale(1.05);
 }
 
 
@@ -706,7 +712,7 @@ body.dark-mode .skills-card{
   }
   .project-card {
     padding: 1.5rem;
-    width:100%;
+    /* width:100%; */
     font-size:16px;
   }
 
@@ -751,9 +757,25 @@ body.dark-mode .skills-card{
     font-size:16px;
     margin:0;
   }
+  #contact-form label {
+    font-size:14px;
+  }
   #contact-form button{
     padding:5px 10px;
     font-size:18px;
+  }
+  #contact h2{
+    font-size:22px;
+  }
+
+  #projects{
+   display:flex;
+   flex-direction: column;
+   width:80vw;
+   justify-content: center;
+   align-items: center;
+   margin:0 auto;
+
   }
  
   
