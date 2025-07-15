@@ -17,10 +17,16 @@ body {
   z-index: 10;
   justify-content: space-between;
   padding: 20px;
-  background-color: #50667b;
+  background: linear-gradient(to right, #0f172a, #3b82f6);
+ 
   color: #fff;
   position: fixed;
   width: 100%;
+}
+
+
+.hidden {
+  display: none;
 }
 .header h2 {
   margin-left: 60px;
@@ -39,7 +45,7 @@ body {
 
 nav ul li a:hover,
 .header ul li a:focus  {
-  color: #bfdaec;
+  color: linear-gradient(to right, #516fb4, #4e8df2);
   text-decoration: underline;
 }
 
@@ -113,7 +119,6 @@ nav ul li a:hover,
   position: sticky;
   top: 0;
   margin: 10px 0 30px 0;
-  background-color: #cedff5;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -160,15 +165,19 @@ nav ul li a:hover,
 }
 
 .skills-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  background-color: #e2e8f0; /* zacht grijsblauw */
+  color: #0f172a;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  border: 1px solid #cbd5e1;
+  transition: all 0.3s ease;
 }
 
 .skills-card:hover {
-  transform: translateY(-5px);
+  background-color: #cbd5e1; /* ietsje donkerder bij hover */
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(100, 116, 139, 0.2); /* subtiele grijze glow */
 }
 
 .skills-card h4 {
@@ -193,9 +202,7 @@ nav ul li a:hover,
   gap: 10px;
   font-size: 16px;
 }
-.techno {
-  margin-top: 30px;
-}
+
 
 .language-list {
   list-style: none;
@@ -207,11 +214,7 @@ nav ul li a:hover,
   margin-bottom: 8px;
   font-size: 16px;
 }
-/* .submenu {
-  padding: 0 20px;
-  list-style: none;
-  font-size:0.3rem;
-} */
+
 #success-message {
   display: none;
   color: green;
@@ -280,17 +283,18 @@ nav ul li a:hover,
   color:#222;
 }
 .download-btn:hover{
-  background-color:#355678 ;
+ background: linear-gradient(to right, #0f172a, #3b82f6);
+  ;
   color:#fff;
 }
 
 #about h2,
 #projects h2 {
   text-align: center;
-  padding: 20px;
+ 
   font-size: 2rem;
   color: #444;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 #about p {
   line-height: 1.6;
@@ -303,21 +307,30 @@ nav ul li a:hover,
   color: #333;
 }
 
+
+ .project-card:hover {
+  transform: scale(1.01);
+} 
+.project-card a:hover {
+  background: linear-gradient(to right, #19253f, #4385ef);
+ 
+}
 .project-card {
-  background-color: #ecf2f5;
-  border: 1px solid #d4e0f3;
-  border-radius: 15px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
+ background-color: #f0f9ff; 
+  color: #0f172a; 
+  margin:20px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #e0f2fe;
 }
 
-.project-card:hover {
-  transform: scale(1.01);
-}
-.project-card a:hover {
-  background-color: #355678;
+
+.project-card::before {
+  background-color: #dbeafe; /* Iets feller blauw bij hover */
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3); 
+  transform: translateY(-5px);
 }
 
 .project-card h4 {
@@ -340,7 +353,8 @@ nav ul li a:hover,
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background-color: #50667b;
+  background: linear-gradient(to right, #0f172a, #3b82f6);
+ 
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
@@ -384,70 +398,85 @@ nav ul li a:hover,
   color: #5fa8f2;
 }
 
+
+/* Container */
 #contact {
-  background-color: #ecf2f5;
-  padding: 40px;
-  max-width: 700px;
-  margin: 60px auto;
-  border-radius: 10px;
-   border: 1px solid #d4e0f3;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Titel */
 #contact h2 {
   text-align: center;
-  font-family: 'Arial', sans-serif;
-  font-size: 1.7rem;
-  margin-bottom: 20px;
-  color: #444;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0f172a;
 }
 
+/* Inputgroepen */
 .form-group {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
+/* Labels */
 .form-group label {
-  display: block;
+  margin-bottom: 0.5rem;
   font-weight: bold;
-  color: #333;
-  margin-bottom: 5px;
-  font-size: 1rem;
+  color: #1e293b;
 }
 
+/* Inputs & Textarea */
 .form-group input,
 .form-group textarea {
-  width: 100%;
-  padding: 12px;
+  padding: 0.75rem 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 0.5rem;
   font-size: 1rem;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  box-sizing: border-box;
-  transition: border-color 0.3s;
+  transition: border 0.3s, box-shadow 0.3s;
 }
 
+/* Focus stijl */
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #6297d0;
   outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
 }
 
-button {
-  background-color: #50667b;
-  color: white;
-  font-size: 1.2rem;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
+/* Submitknop */
+.submit-btn {
   width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-button:hover {
-  background-color: #355678;
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
 }
+
+/* Success message */
+#success-message {
+  margin-top: 1rem;
+  color: #10b981;
+  display: none;
+  text-align: center;
+}
+
 footer {
-  background: linear-gradient(to right, #50667b, #728ca1);
+ background: linear-gradient(to right, #0f172a, #3b82f6);
   color: white;
   text-align: center;
   padding: 50px 10px;
@@ -493,18 +522,20 @@ footer {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  gap: 5px;
-  z-index: 20;
+  gap: 3px;
+ 
+  z-index: 2;
   margin-right: 15px;
 }
 
 #hamburger span {
-  height: 3px;
-  width: 25px;
+  height: 5px;
+  width: 23px;
   background-color: white;
   border-radius: 2px;
   transition: 0.3s;
 }
+
 #hamburger.open span:nth-child(1) {
   transform: rotate(50deg) translate(5px, 5px);
 }
@@ -554,7 +585,7 @@ body.dark-mode #projects h2,
 body.dark-mode .skills-wrapper h2,
 body.dark-mode .more-projects,
 body.dark-mode .more-projects h3,
-body.dark-mode #contact h2,
+
 body.dark-mode .skills-card h4,
 body.dark-mode .project-card li::marker
 {
@@ -583,11 +614,15 @@ body.dark-mode .my-pic{
 }
 
 body.dark-mode .project-card,
-body.dark-mode .project-card h4,
-body.dark-mode #contact
+body.dark-mode .project-card h4
+
 {
   background-color: #333;
   color:#fff;
+}
+body.dark-mode #contact,
+body.dark-mode #contact h2{
+  color:#5c5b5b;
 }
 body.dark-mode .skills-card{
   background-color: #666;
@@ -612,7 +647,7 @@ body.dark-mode .skills-card{
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: #50667b;
+    background: linear-gradient(to right, #0f172a, #3b82f6);
     flex-direction: column;
     align-items: flex-start;
     width: 200px;
@@ -622,6 +657,10 @@ body.dark-mode .skills-card{
     gap: 20px;
   }
 
+  .hero-section{
+    height:80vh;
+    z-index:1;
+  }
   #nav-links.active {
     display: flex;
   }
@@ -667,6 +706,8 @@ body.dark-mode .skills-card{
   }
   .project-card {
     padding: 1.5rem;
+    width:100%;
+    font-size:16px;
   }
 
   #projects h2 {
@@ -696,4 +737,24 @@ body.dark-mode .skills-card{
   button {
     font-size: 1.3rem;
   }
+}
+@media(max-width:400px){
+  #contact {
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact-form {
+    width:100%;
+    font-size:16px;
+    margin:0;
+  }
+  #contact-form button{
+    padding:5px 10px;
+    font-size:18px;
+  }
+ 
+  
 }
