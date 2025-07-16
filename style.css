@@ -22,7 +22,6 @@ h1, h2, h3 {
   justify-content: space-between;
   padding: 20px;
   background: linear-gradient(to right, #0f172a, #3b82f6);
- 
   color: #fff;
   position: fixed;
   width: 100%;
@@ -46,13 +45,18 @@ h1, h2, h3 {
   color: white;
   text-decoration: none;
 }
-
 nav ul li a:hover,
-.header ul li a:focus  {
-  color: linear-gradient(to right, #516fb4, #4e8df2);
+.header ul li a:focus,
+.header ul li a:active {
+ 
   text-decoration: underline;
 }
-
+#nav-links a.active ,
+#nav-links a.active i {
+  color: rgb(233, 189, 108);  
+  text-decoration: underline;
+  font-weight: bold;
+}
 .hero-section {
   position:relative;
  background-image: url('https://images.unsplash.com/photo-1581276879432-15e50529f34b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
@@ -86,7 +90,7 @@ nav ul li a:hover,
   background-image: inherit;
   background-size: cover;
   background-position: center;
-  filter: blur(2px) brightness(90%);
+  filter: blur(4px) brightness(90%);
   z-index: 5;
 }
 
@@ -187,7 +191,6 @@ nav ul li a:hover,
 }
 
 .skills-card h4 {
-  margin-bottom: 15px;
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -199,7 +202,7 @@ nav ul li a:hover,
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .technologies div {
@@ -211,13 +214,14 @@ nav ul li a:hover,
 
 
 .language-list {
+ 
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .language-list li {
-  margin-bottom: 8px;
+  margin: 8px;
   font-size: 16px;
 }
 
@@ -416,10 +420,10 @@ nav ul li a:hover,
   transition: all 0.3s ease-in-out;
  
 }
-.fa-github{
+.fa-2x{
   margin-bottom:2rem;
 }
-.fa-github:hover {
+.fa-2x:hover {
   color: #5fa8f2;
   border:2px solid #1572b6;
   transform: scale(1.05);
@@ -467,7 +471,28 @@ nav ul li a:hover,
   z-index: 1000;
 }
 
+#scrollTopBtn {
+  position: fixed;
+  top:50%;
+  right:1rem;
+ 
+  background-color: #3b82f6; 
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+#scrollTopBtn:hover {
+  background-color: #2563eb;
+}
 /* Container */
 #contact {
   max-width: 600px;
@@ -548,7 +573,7 @@ footer {
  background: linear-gradient(to right, #0f172a, #3b82f6);
   color: white;
   text-align: center;
-  padding: 50px 10px;
+  padding: 20px 10px;
   margin-top: 40px;
 
 }

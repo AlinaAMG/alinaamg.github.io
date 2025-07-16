@@ -66,3 +66,30 @@ toggleBtn.addEventListener("click", function (e) {
    document.getElementById('modal').style.display = 'none';
  }
 
+window.onscroll = function () {
+  const btn = document.getElementById('scrollTopBtn');
+  if (
+    document.body.scrollTop > 300 ||
+    document.documentElement.scrollTop > 300
+  ) {
+    btn.style.display = 'block';
+  } else {
+    btn.style.display = 'none';
+  }
+};
+
+// Scroll smooth naar boven
+document.getElementById('scrollTopBtn').addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+const links = document.querySelectorAll('nav ul li a');
+
+links.forEach((link) => {
+  link.addEventListener('click', function (e) {
+    links.forEach((l) => l.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
