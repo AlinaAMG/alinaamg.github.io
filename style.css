@@ -27,12 +27,15 @@ h1, h2, h3 {
   width: 100%;
 }
 
-
 .hidden {
   display: none;
 }
-.header h2 {
-  margin-left: 60px;
+.header h1 a{
+  color: rgb(233, 189, 108);
+  text-decoration:none;
+  letter-spacing:1;
+  font-weight:600;
+   
 }
 .header ul {
   list-style: none;
@@ -48,8 +51,7 @@ h1, h2, h3 {
 nav ul li a:hover,
 .header ul li a:focus,
 .header ul li a:active {
- 
-  text-decoration: underline;
+ text-decoration: underline;
 }
 #nav-links a.active ,
 #nav-links a.active i {
@@ -118,6 +120,7 @@ nav ul li a:hover,
   transform: scale(1.05);
 }
 
+
 .container-body {
   display: flex;
   border-bottom: 1px solid rgb(203, 218, 249);
@@ -142,12 +145,14 @@ nav ul li a:hover,
   height: 200px;
   border-radius: 50%;
   margin: 20px auto;
-  border:2px solid #8da7bf;
+  border-bottom:6px solid  rgb(233, 189, 108);
+  border-top:1px  solid rgb(233, 189, 108);
   cursor:pointer;
+   transition: all 0.5s ease-in-out;
 }
 .my-pic:hover {
   transform: scale(1.05);
- transition: all 0.3s ease;
+
 }
 .container-info {
   display: flex;
@@ -285,17 +290,18 @@ nav ul li a:hover,
 
 }
 .download-btn{
-  background-color: #fff;
+  background: linear-gradient(to right, rgb(230, 201, 148), rgb(233, 189, 108));
   text-decoration: none;
   padding:8px 12px;
   font-weight: 600;
-  border-radius: 5px;
+  border-radius: 8px;
   color:#222;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 .download-btn:hover{
  background: linear-gradient(to right, #0f172a, #3b82f6);
-  ;
   color:#fff;
+   
 }
 
 #about h2,
@@ -337,7 +343,7 @@ nav ul li a:hover,
   transform: scale(1.01);
 } 
 .project-card a:hover {
-  background: linear-gradient(to right, #19253f, #4385ef);
+  background: linear-gradient(to right, #243457, #6498ed);
  
 }
 .project-card {
@@ -379,11 +385,10 @@ nav ul li a:hover,
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
   background: linear-gradient(to right, #0f172a, #3b82f6);
- 
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease-in-out;
 }
 .project-card ul {
   margin-top:10px;
@@ -530,7 +535,7 @@ nav ul li a:hover,
 .form-group textarea {
   padding: 0.75rem 1rem;
   border: 2px solid #cbd5e1;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   font-size: 1rem;
   transition: border 0.3s, box-shadow 0.3s;
 }
@@ -551,7 +556,7 @@ nav ul li a:hover,
   background: linear-gradient(to right, #3b82f6, #6366f1);
   color: white;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
