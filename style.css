@@ -292,9 +292,11 @@ nav ul li a:hover,
 .download-btn{
   background: linear-gradient(to right, rgb(230, 201, 148), rgb(233, 189, 108));
   text-decoration: none;
-  padding:8px 12px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
   font-weight: 600;
   border-radius: 8px;
+  margin-top:20px;
   color:#222;
   transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
