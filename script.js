@@ -93,3 +93,8 @@ links.forEach((link) => {
     this.classList.add('active');
   });
 });
+
+// Scroll smooth naar beneden 
+document.getElementById("scrollDownBtn").addEventListener("click", function () {
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+  });

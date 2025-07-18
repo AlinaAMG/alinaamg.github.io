@@ -292,7 +292,7 @@ nav ul li a:hover,
 .download-btn{
   background: linear-gradient(to right, rgb(230, 201, 148), rgb(233, 189, 108));
   text-decoration: none;
-  padding: 12px 24px;
+  padding: 14px 26px;
   font-size: 1.1rem;
   font-weight: 600;
   border-radius: 8px;
@@ -326,7 +326,7 @@ nav ul li a:hover,
   display:block;
 
   border-radius: 0.7rem;
- margin:10px auto 30px;
+  margin:10px auto 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   cursor:pointer;
   transition: 0.3s all ease-in-out;
@@ -345,16 +345,16 @@ nav ul li a:hover,
   transform: scale(1.01);
 } 
 .project-card a:hover {
-  background: linear-gradient(to right, #243457, #6498ed);
+  background: linear-gradient(to right, #253148, #6498ed);
  
 }
 .project-card {
- background-color: #f0f9ff; 
-  color: #0f172a; 
+ background-color:   #f9f5e9;
+   color: #253148; 
   margin:20px;
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   border: 1px solid #e0f2fe;
 }
@@ -499,6 +499,29 @@ nav ul li a:hover,
 
 #scrollTopBtn:hover {
   background-color: #2563eb;
+}
+
+#scrollDownBtn {
+  /* margin-top: 2rem; */
+  background-color: #2563eb;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+   position: absolute;
+   bottom:-5rem;
+   left:45%;
+   right:55%;
+  z-index: 9999;
+}
+
+#scrollDownBtn:hover {
+  transform: translateY(5px);
 }
 /* Container */
 #contact {
