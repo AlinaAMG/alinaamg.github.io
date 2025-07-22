@@ -8,8 +8,8 @@ html {
 }
 body {
   font-family: 'Inter', sans-serif;
+   line-height: 1.5;
   
-   color:#444;
 }
 
 h1, h2, h3 {
@@ -176,11 +176,11 @@ nav ul li a:hover,
 }
 .skills-wrapper h2 {
   text-align: center;
-  color:#444;
+  color:#333;
 }
 
 .skills-card {
-  background-color: #e2e8f0; /* zacht grijsblauw */
+  background-color: #e2e8f0;
   color: #0f172a;
   padding: 1.5rem;
   border-radius: 1rem;
@@ -190,9 +190,9 @@ nav ul li a:hover,
 }
 
 .skills-card:hover {
-  background-color: #cbd5e1; /* ietsje donkerder bij hover */
+  background-color: #cbd5e1; 
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(100, 116, 139, 0.2); /* subtiele grijze glow */
+  box-shadow: 0 8px 20px rgba(100, 116, 139, 0.2); 
 }
 
 .skills-card h4 {
@@ -219,7 +219,6 @@ nav ul li a:hover,
 
 
 .language-list {
- 
   list-style: none;
   padding: 0;
   margin: 0;
@@ -289,6 +288,10 @@ nav ul li a:hover,
   margin-left:20px;
 
 }
+#about p{
+  text-indent: 2rem; 
+  color:#1a1a40;
+}
 .download-btn{
   background: linear-gradient(to right, rgb(230, 201, 148), rgb(233, 189, 108));
   text-decoration: none;
@@ -298,7 +301,7 @@ nav ul li a:hover,
   border-radius: 8px;
   margin-top:20px;
   color:#222;
-  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 .download-btn:hover{
  background: linear-gradient(to right, #0f172a, #3b82f6);
@@ -310,7 +313,7 @@ nav ul li a:hover,
 #projects h2 {
   text-align: center;
   font-size: 2rem;
-  color: #444;
+  color: #1a1a40;
   margin: 2rem 1rem;
 }
 #about p {
@@ -336,10 +339,24 @@ nav ul li a:hover,
   transform:scale(1.02);
 }
 
-#projects {
-  color: #333;
+
+.project-card {
+ background-color:   #f9f5e9;
+  color: #253148; 
+  margin-bottom:80px;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid hsl(204, 94%, 94%);
 }
 
+
+.project-card::before {
+  background-color: #dbeafe; 
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3); 
+  transform: translateY(-5px);
+}
 
  .project-card:hover {
   transform: scale(1.01);
@@ -348,34 +365,18 @@ nav ul li a:hover,
   background: linear-gradient(to right, #253148, #6498ed);
  
 }
-.project-card {
- background-color:   #f9f5e9;
-   color: #253148; 
-  margin:20px;
-  padding: 1.5rem;
-  border-radius: 1rem;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border: 1px solid #e0f2fe;
-}
-
-
-.project-card::before {
-  background-color: #dbeafe; /* Iets feller blauw bij hover */
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3); 
-  transform: translateY(-5px);
-}
 
 .project-card h4 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #555;
+  color: #333;
 }
 
 .project-card p,
 .project-card li {
   line-height: 1.6;
   font-size: 1rem;
+ 
 }
 
 .project-card li::marker {
@@ -415,11 +416,11 @@ nav ul li a:hover,
   gap: 10px;
 }
 .more-projects h3{
-  color:#444;
+  color:#222;
 }
 
 .more-projects .fa-github {
-  color: #555;
+  color: #222;
   font-size: 1.2rem;
   padding:5px;
   border:2px solid rgb(34, 154, 253);
@@ -523,6 +524,7 @@ nav ul li a:hover,
 #scrollDownBtn:hover {
   transform: translateY(5px);
 }
+
 /* Container */
 #contact {
   max-width: 600px;
@@ -709,7 +711,7 @@ body.dark-mode #projects h2,
 body.dark-mode .skills-wrapper h2,
 body.dark-mode .more-projects,
 body.dark-mode .more-projects h3,
-
+body.dark-mode #about p,
 body.dark-mode .skills-card h4,
 body.dark-mode .project-card li::marker
 {
