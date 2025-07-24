@@ -136,24 +136,40 @@ nav ul li a:hover,
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   z-index: 1;
   box-shadow: 2px 2px 3px rgba(16, 46, 70, 0.5);
   
 }
+
+ .profile-container {
+  margin-top:20px;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(to right, #e6c994, #e9bd6c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
 .my-pic {
+
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin: 20px auto;
-  border-bottom:6px solid  rgb(233, 189, 108);
-  border-top:1px  solid rgb(233, 189, 108);
-  cursor:pointer;
-   transition: all 0.5s ease-in-out;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  cursor: pointer;
 }
-.my-pic:hover {
-  transform: scale(1.05);
 
+.profile-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(233, 189, 108, 0.6);
 }
 .container-info {
   display: flex;
@@ -337,11 +353,10 @@ nav ul li a:hover,
 
 .card-image {
   max-width: 100%;
- aspect-ratio: 7 / 5; 
+  aspect-ratio: 7 / 5; 
   height: 300px;
   object-fit: cover;
   display:block;
-
   border-radius: 0.7rem;
   margin:10px auto 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -605,7 +620,6 @@ nav ul li a:hover,
 .submit-btn:hover {
   transform: translateY(-2px);
   box-shadow: 1px 1px 6px rgba(2, 9, 48, 0.3);
- 
   background: linear-gradient(to right, #10295d, #4e8af1);
  
 }
@@ -666,7 +680,6 @@ footer {
   flex-direction: column;
   cursor: pointer;
   gap: 3px;
- 
   z-index: 2;
   margin-right: 15px;
 }
