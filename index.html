@@ -152,6 +152,59 @@
   
   <div id="projects">
   <h2>Mijn Projecten</h2>
+
+  <div class="project-card">
+     <img src="/img/dashboard.jpg" 
+     alt="First Sip project preview"
+     class="card-image"
+     onclick="openModal(this.src)" />
+
+
+     <h4>Hotel App - The Wild Oasis</h4>
+      <p><strong>Beschrijving:</strong>
+     Een volledige hotelApp gebouwd met React en Supabase. Deze applicatie maakt het mogelijk om alle aspecten van een hotel te beheren — van boekingen en gasten tot kamers, gebruikers en instellingen. Perfect voor hotelmedewerkers om snel en efficiënt hun dagelijkse taken uit te voeren.
+   </p>
+   <ul>
+    <li>Boekingen bekijken, toevoegen, updaten, check-in/check-out en verwijderen via Supabase</li>
+    <li>Cabins beheren: aanmaken, updaten en verwijderen via Supabase</li>
+    <li>Dashboard met realtime statistieken over omzet, bezetting en boekingen (laatste 7, 30, 90 dagen)</li>
+    <li>Gebruikersbeheer met roltoewijzingen, avatar upload en authenticatie via Supabase</li>
+    <li>Instellingen beheren: prijs per nacht, minimum/maximumnachten, extra’s zoals ontbijt toevoegen</li>
+   <li>Donkere modus (dark mode) voor een prettige gebruikerservaring</li>
+  </ul>
+
+  <p><strong>Technologieën:</strong></p>
+  <ul>
+    <li><strong>React</strong> met component-based architecture</li>
+    <li><strong>React Query</strong> voor efficiënte en gecachte dataviews</li>
+    <li><strong>Supabase</strong> voor databasebeheer én gebruikersauthenticatie</li>
+    <li><strong>Styled Components</strong> voor scoped en dynamische styling</li>
+    <li><strong>React Hook Form</strong> voor gebruiksvriendelijke en gevalideerde formulieren</li>
+    <li><strong>React Router</strong> voor SPA navigatie</li>
+    <li><strong>React Icons</strong> voor consistente en toegankelijke iconen</li>
+    <li><strong>React Hot Toast</strong> voor snelle en gebruiksvriendelijke meldingen</li>
+     <li><strong>Date-fns</strong> voor datumformattering en berekeningen </li>
+     <li><strong>Recharts</strong> voor datavisualisatie op het dashboard</li>
+  </ul>
+  <p><strong>Wat heb ik geleerd:</strong></p>
+  <ul>
+    <li>Werken met een complete backend-as-a-service oplossing zoals Supabase voor zowel authenticatie als databasebeheer</li>
+    <li>Data fetching optimaliseren met React Query, inclusief caching, loading states en invalidatie</li>
+    <li>Formulieren bouwen met React Hook Form en foutvalidatie toevoegen</li>
+      <li>Hoe je foutafhandeling implementeert met <code>react-error-boundary</code> voor een stabiele gebruikerservaring</li>
+    <li>Dashboard logica opzetten en statistieken weergeven met Recharts</li>
+    <li>Gebruik maken van dynamische styling via Styled Components</li>
+    <li>Gebruik van protected routes, role-based toegang en UI-beheer op basis van de gebruiker</li>
+    <li>Debugging van auth- en API-gerelateerde problemen en veilige environment variables toepassen</li>
+  </ul>
+
+    <a href="https://thewild-oasis-app.netlify.app" target="_blank"><span>🏨</span> Bekijk het project</a>
+    </div>
+  <div id="modal" class="modal">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img id="modal-img"/>
+  </div>
+
   <div class="project-card">
      <img src="/img/coffeeApp.jpg" 
      alt="First Sip project preview"
