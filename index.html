@@ -89,6 +89,10 @@
             <div><i class="fab fa-js-square"></i> JavaScript</div>
              <div><i class="fas fa-code"></i> jQuery</div>
            <div><i class="fab fa-react"></i> React.JS</div>
+            <div>
+          <img src="https://www.svgrepo.com/show/354113/nextjs-icon.svg" 
+               alt="Next.js" width="22" height="22" /> Next.js
+        </div>
           </div>
        </div>
 
@@ -105,6 +109,11 @@
     <div class="technologies">
       <div><i class="fas fa-database"></i> MongoDB</div>
     </div>
+    <div style="display:flex;align-items: center; gap:8px; margin-top:10px">
+
+    <img style=" border:1px solid black; padding:3px;background-color:black;border-radius:50%" src="https://logo.svgcdn.com/l/supabase-icon.svg" 
+       alt="Supabase" width="22" height="22" /> Supabase
+ </div>
   </div>
 
   <div class="skills-card">
@@ -152,6 +161,75 @@
   
   <div id="projects">
   <h2>Mijn Projecten</h2>
+
+  <div class="project-card">
+  <img src="/img/thewildoasis-homepage.jpg" 
+       alt="The Wild Oasis Website preview"
+       class="card-image"
+       onclick="openModal(this.src)" />
+
+  <h4>The Wild Oasis Website</h4>
+ 
+  <p><strong>Beschrijving:</strong>
+    Een moderne hotelwebsite gebouwd met <strong>Next.js (App Router)</strong>, <strong>React</strong> en <strong>Supabase</strong>. 
+    De homepage bevat een grote hero-sectie met een call-to-action knop die je naar de cabins-pagina brengt. 
+    Op deze pagina kun je alle cabins bekijken, filteren op capaciteit (2–4, 4–7 of 8–12 gasten), en per cabin de prijs en een knop 
+    voor <em>Details &amp; Reserveren</em> zien. 
+    Via de detailpagina <code>/cabins/[cabinId]</code> kun je een boeking maken in de kalender (met datumselectie), aantal gasten en opmerkingen invullen, en daarna reserveren.  
+    Alleen ingelogde gebruikers (via Google login) kunnen reserveringen maken en hun gastprofiel bekijken.
+  </p>
+
+  <ul>
+    <li>Homepage met hero-afbeelding en call-to-action naar cabins</li>
+    <li>Cabins pagina met filtering per aantal gasten en overzichtskaarten</li>
+    <li>Cabin detailpagina met reserveringskalender, formulier en reserveringsknop</li>
+    <li>Authenticatie via Google login (Supabase Auth)</li>
+    <li>Beveiligde gastomgeving: <code>/account/reservations</code> en <code>/account/profile</code></li>
+    <li>CRUD-operaties voor reserveringen:
+      <ul>
+        <li><strong>Create</strong> → nieuwe reservering maken</li>
+        <li><strong>Read</strong> → reserveringen ophalen en bekijken</li>
+        <li><strong>Update</strong> → reservering aanpassen</li>
+        <li><strong>Delete</strong> → reservering verwijderen</li>
+      </ul>
+    </li>
+    <li>Gastprofiel bijwerken en profielafbeelding uploaden</li>
+  </ul>
+
+  <p><strong>Technologieën:</strong></p>
+  <ul>
+    <li><strong>Next.js (App Router)</strong> met server components</li>
+    <li><strong>React</strong> voor interactieve UI</li>
+    <li><strong>Supabase</strong> voor database, authenticatie en CRUD-operaties</li>
+    <li><strong>Tailwind CSS</strong> voor styling</li>
+    <li><strong>Date Picker</strong> voor datumselectie bij boekingen</li>
+    <li><strong>Date-fns</strong> voor datumbewerkingen en formatting</li>
+    <li><strong>Heroicons</strong> voor consistente iconen</li>
+  </ul>
+
+  <p><strong>Wat heb ik geleerd:</strong></p>
+  <ul>
+    <li>Werken met het <strong>Next.js App Router</strong> en server components</li>
+    <li>Integratie van Supabase voor data-opslag, authenticatie en bestandsuploads</li>
+    <li>Hoe je filterfunctionaliteit en dynamische routes implementeert (<code>/cabins/[cabinId]</code>)</li>
+    <li>Reserveringslogica opzetten met een kalender en formulieren</li>
+    <li>Werken met <strong>date-fns</strong> voor datumberekeningen en formatering (bijvoorbeeld verschil tussen check-in en check-out berekenen)</li>
+    <li>CRUD-operaties in een echte app toepassen (Create, Read, Update, Delete)</li>
+    <li>Beschermen van routes en functionaliteiten voor ingelogde gebruikers</li>
+    <li>Gebruiksvriendelijke UI bouwen met Tailwind en Heroicons</li>
+    <li><strong>Geavanceerde Next.js features:</strong> 
+      werken met <code>cache</code> voor databeheer, 
+      <code>revalidatePath</code> voor on-demand ISR, 
+      en <code>Suspense</code> met loading states voor betere UX
+    </li>
+  </ul>
+
+  <a  href="https://the-wild-oasis-website-woad-kappa.vercel.app" target="_blank">
+    <img src="img/icon.png" alt="logo pic" width="15" height="15" style="margin-right:5px ;margin-top:5px"/>
+     Bekijk het project
+  </a>
+ 
+</div>
 
   <div class="project-card">
      <img src="/img/dashboard.jpg" 
