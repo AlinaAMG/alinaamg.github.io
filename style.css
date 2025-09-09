@@ -187,9 +187,8 @@ nav ul li a:hover,
 }
 .skills-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  margin:20px;
 }
 .skills-wrapper h2 {
   text-align: center;
@@ -204,6 +203,8 @@ nav ul li a:hover,
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
   border: 1px solid #cbd5e1;
   transition: all 0.3s ease;
+  margin:20px 0;
+
 }
 
 .skills-card:hover {
