@@ -313,7 +313,7 @@ nav ul li a:hover,
 
 
 }
-#about p{
+#about .para{
   text-indent: 2rem; 
   color:#1a1a40;
 }
