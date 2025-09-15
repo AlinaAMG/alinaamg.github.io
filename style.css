@@ -310,7 +310,7 @@ nav ul li a:hover,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:30px;
+  gap:10px;
 
 
 }
@@ -408,8 +408,9 @@ nav ul li a:hover,
 
 .project-card h4 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin:40px;
   color: #333;
+  text-align: center;
 }
 
 .project-card p,
