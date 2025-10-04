@@ -130,7 +130,6 @@ nav ul li a:hover,
 .left-side {
   width: 30%;
   position: sticky;
-
   top: 0;
   margin: 10px 0 30px 0;
   border-radius: 10px;
@@ -185,11 +184,12 @@ nav ul li a:hover,
 }
 .skills-wrapper {
    overflow-y: scroll;
-   height:60vh;
+   height:40vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   margin: 20px;
 }
+
 .skills-wrapper h2 {
   text-align: center;
   color: #333;
@@ -201,10 +201,11 @@ nav ul li a:hover,
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-  border: 1px solid #cbd5e1;
-  transition: all 0.3s ease;
-  margin: 20px 0;
+  margin: 20px 0;               
+  transform: translateY(10px);
+  transition: all 0.6s ease;
 }
+
 
 .skills-card:hover {
   background-color: #cbd5e1;
@@ -562,7 +563,7 @@ nav ul li a:hover,
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Titel */
+
 #contact h2 {
   text-align: center;
   font-size: 2rem;
@@ -570,21 +571,19 @@ nav ul li a:hover,
   color: #0f172a;
 }
 
-/* Inputgroepen */
 .form-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
 }
 
-/* Labels */
+
 .form-group label {
   margin-bottom: 0.5rem;
   font-weight: bold;
   color: #1e293b;
 }
 
-/* Inputs & Textarea */
 .form-group input,
 .form-group textarea {
   padding: 0.75rem 1rem;
@@ -594,7 +593,6 @@ nav ul li a:hover,
   transition: border 0.3s, box-shadow 0.3s;
 }
 
-/* Focus stijl */
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
@@ -602,7 +600,7 @@ nav ul li a:hover,
   box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
 }
 
-/* Submitknop */
+
 .submit-btn {
   width: 100%;
   padding: 1rem;
@@ -622,7 +620,7 @@ nav ul li a:hover,
   background: linear-gradient(to right, #10295d, #4e8af1);
 }
 
-/* Success message */
+
 #success-message {
   margin-top: 1rem;
   color: #10b981;
@@ -831,14 +829,16 @@ body.dark-mode .skills-card {
   }
 
   .left-side {
-    width: 100%;
+    width:100%;
     position: relative;
     margin: 20px 0;
     height: auto;
+    
   }
 
   .skills-wrapper {
     grid-template-columns: 1fr;
+    width:70vw;
   }
 
   .container-info {
@@ -846,6 +846,7 @@ body.dark-mode .skills-card {
     gap: 5px;
     margin-left: 0;
     text-align: center;
+    
   }
   .project-card {
     padding: 1.5rem;
