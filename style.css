@@ -528,6 +528,12 @@ nav ul li a:hover,
   z-index: 1000;
   transition: all 0.3s ease-in-out;
 }
+.btn-container{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom:2rem;
+  margin-top:2rem;
+}
 
 #scrollTopBtn:hover,
 #scrollDownBtn:hover {
