@@ -842,6 +842,14 @@ body.dark-mode .skills-card {
     padding: 0 20px;
   }
 
+  .header {
+    align-items: center;
+  }
+
+  .header a {
+    font-size: 26px;
+  }
+
   #nav-links {
     position: absolute;
     top: 70px;
@@ -910,6 +918,10 @@ body.dark-mode .skills-card {
 
   }
 
+  #projects {
+    width: 80vw;
+  }
+
   .project-card {
     padding: 1.5rem;
     font-size: 16px;
@@ -951,9 +963,21 @@ body.dark-mode .skills-card {
   button {
     font-size: 1.3rem;
   }
+
+  #about {
+    width: 80vw;
+  }
 }
 
 @media (max-width: 400px) {
+  .header {
+    align-items: center;
+  }
+
+  .header a {
+    font-size: 22px;
+  }
+
   #contact {
     width: 80%;
     display: flex;
@@ -1002,5 +1026,9 @@ body.dark-mode .skills-card {
     width: 50%;
     padding: 10px 12px;
     align-items: center;
+  }
+
+  #about {
+    width: 80vw;
   }
 }
