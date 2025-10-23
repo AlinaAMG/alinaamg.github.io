@@ -380,7 +380,7 @@
           <img id="modal-img" />
         </div>
 
-
+        <!-- 
         <div class="project-card">
           <h4>usePopcorn Movie App</h4>
           <img src="/img/movieApp.jpg" alt="Use Popcorn project preview" class="card-image"
@@ -420,7 +420,54 @@
         </div>
         <button id="scrollTopBtn" title="Naar boven">
           <i class="fas fa-arrow-up"></i>
-        </button>
+        </button> -->
+
+        <div class="project-card">
+          <h4>WorldWise</h4>
+          <img src="/img/worldWise.png" alt="WorldWise project preview" class="card-image"
+            onclick="openModal(this.src)" />
+
+          <p><strong>Beschrijving:</strong></p>
+          <p>Een reis- en tracking-app gebouwd met React waarin gebruikers plekken over de hele wereld kunnen tracken.
+            Je kunt een locatie selecteren op de wereldkaart, de datum en notes toevoegen, en alles wordt opgeslagen in
+            de backend.
+            Alle cities en countries worden vervolgens dynamisch in de UI getoond.
+          </p>
+
+          <p class="techno"><strong>Technologieën:</strong></p>
+          <ul>
+            <li>React + functionele componenten</li>
+            <li>Vite – als bundler en development environment</li>
+            <li>React Router DOM (routes & lazy loading)</li>
+            <li>Leaflet (wereldkaart & markers)</li>
+            <li>Fetch API (frontend ↔ backend)</li>
+            <li>Express.js – voor de backend</li>
+            <li>module.css (styling)</li>
+
+          </ul>
+
+          <p><strong>Wat ik heb geleerd:</strong></p>
+          <ul>
+            <li>Frontend ↔ backend koppelen</li>
+            <li>Dynamisch data ophalen en tonen</li>
+            <li>Formdata POSTen naar backend</li>
+            <li>Routing en lazy loading met React Router DOM</li>
+            <li>Het bouwen van een nette, interactieve UI met module.css</li>
+            <li>Leaflet gebruiken voor interactieve kaarten</li>
+            <li>Express.js gebruiken voor REST API endpoints</li>
+          </ul>
+
+          <div class="btn-container">
+            <a href="https://worldwiseproject-app.netlify.app/" target="_blank">🌍 Bekijk live</a>
+            <a href="https://github.com/AlinaAMG/React-Next.js-Redux/tree/WorldWiseProjectApp" target="_blank">🌍 Bekijk
+              code</a>
+          </div>
+        </div>
+
+        <div id="modal" class="modal" onclick="closeModal()">
+          <img id="modal-img">
+        </div>
+
         <div class="project-card">
           <h4> Pig Game </h4>
           <img src="/img/piggame.jpg" alt="Pig Game project preview" class="card-image" onclick="openModal(this.src)" />

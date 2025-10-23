@@ -952,8 +952,9 @@ body.dark-mode .skills-card {
 
   #contact {
     padding: 60px;
-    width: 500px;
+    width: 80%;;
   }
+ 
 
   .form-group input,
   .form-group textarea {
@@ -967,11 +968,26 @@ body.dark-mode .skills-card {
   #about {
     width: 80vw;
   }
+  .btn-container{
+    display:flex;
+    flex-direction: column;
+    gap:0;
+  }
+  .btn-container a  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  }
 }
 
 @media (max-width: 400px) {
   .header {
     align-items: center;
+  }
+
+  #nav-links a{
+    font-size: 18px;
   }
 
   .header a {
@@ -990,6 +1006,7 @@ body.dark-mode .skills-card {
     width: 100%;
     font-size: 16px;
     margin: 0;
+    
   }
 
   #contact-form label {
@@ -997,8 +1014,8 @@ body.dark-mode .skills-card {
   }
 
   #contact-form button {
-    padding: 5px 10px;
-    font-size: 18px;
+    padding: 10px 10px;
+    font-size: 16px;
   }
 
   #contact h2 {
@@ -1019,13 +1036,17 @@ body.dark-mode .skills-card {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    
 
   }
 
   .btn-container a {
-    width: 50%;
-    padding: 10px 12px;
+    width: 100%;
+    /* padding: 10px 12px; */
+    display:flex;
     align-items: center;
+    justify-content: center;
+    font-size:14px;
   }
 
   #about {
