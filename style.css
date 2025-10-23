@@ -149,6 +149,7 @@ nav ul li a:hover,
   align-items: center;
   height: 100%;
   z-index: 1;
+  /* height:250vh; */
   box-shadow: 2px 2px 3px rgba(16, 46, 70, 0.5);
 }
 
@@ -197,7 +198,7 @@ nav ul li a:hover,
 
 .skills-wrapper {
   overflow-y: scroll;
-  height: 40vh;
+  height: 50vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   margin: 20px;
@@ -896,6 +897,11 @@ body.dark-mode .skills-card {
   .header h2 {
     margin-left: 20px;
   }
+  
+  #nav-links a{
+    font-size: 18px;
+  }
+
 
   .left-side {
     width: 100%;
@@ -979,6 +985,10 @@ body.dark-mode .skills-card {
     align-items: center;
 
   }
+  .btn-container a img{
+    margin-right:10px;
+  }
+
 }
 
 @media (max-width: 400px) {
@@ -1047,6 +1057,10 @@ body.dark-mode .skills-card {
     align-items: center;
     justify-content: center;
     font-size:14px;
+  
+  }
+  .btn-container a img{
+    margin-right:10px;
   }
 
   #about {
