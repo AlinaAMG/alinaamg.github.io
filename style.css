@@ -137,6 +137,7 @@ nav ul li a:hover,
   margin: 30px auto 80px;
 }
 
+
 .left-side {
   width: 30%;
   position: sticky;
@@ -149,9 +150,10 @@ nav ul li a:hover,
   align-items: center;
   height: 100%;
   z-index: 1;
-  /* height:250vh; */
+  /* height:250vh;  */
   box-shadow: 2px 2px 3px rgba(16, 46, 70, 0.5);
-}
+} 
+
 
 .profile-container {
   margin-top: 20px;
@@ -203,6 +205,7 @@ nav ul li a:hover,
   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   margin: 20px;
 }
+
 
 .skills-wrapper h2 {
   text-align: center;
@@ -331,6 +334,7 @@ nav ul li a:hover,
   align-items: center;
   gap: 10px;
 }
+
 
 #about .para {
   text-indent: 2rem;
@@ -973,6 +977,7 @@ body.dark-mode .skills-card {
 
   #about {
     width: 80vw;
+     margin-top: 500px;
   }
   .btn-container{
     display:flex;
