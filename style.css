@@ -846,6 +846,7 @@ body.dark-mode .skills-card {
     flex-direction: column;
     padding: 0 20px;
   }
+  
 
   .header {
     align-items: center;
@@ -975,9 +976,9 @@ body.dark-mode .skills-card {
     font-size: 1.3rem;
   }
 
-  #about {
+   #about {
     width: 80vw;
-     margin-top: 500px;
+    
   }
   .btn-container{
     display:flex;
@@ -999,6 +1000,9 @@ body.dark-mode .skills-card {
 @media (max-width: 400px) {
   .header {
     align-items: center;
+  }
+  #about{
+    margin-top:0;
   }
 
   #nav-links a{
